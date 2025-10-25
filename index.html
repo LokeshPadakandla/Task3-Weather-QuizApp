@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Weather & Quiz Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Smart Weather & Quiz Dashboard</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- 🌦️ Weather Section -->
+    <section class="weather">
+      <h2>Check Weather</h2>
+      <input type="text" id="city" placeholder="Enter city name">
+      <button onclick="getWeather()">Check Weather</button>
+      <div id="weather-result"></div>
+    </section>
+
+    <!-- 🧠 Quiz Section -->
+    <section class="quiz">
+      <h2>Quick Quiz</h2>
+      <div id="quiz">
+        <p id="question"></p>
+        <div class="options">
+          <button class="option" id="a"></button>
+          <button class="option" id="b"></button>
+          <button class="option" id="c"></button>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Lokesh Padakandla © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
